@@ -21,13 +21,23 @@ app.get('/index', (req, res) => {
 
 })
 
-app.get('/show/:index/', (req, res) => {
-    const indexno = parseInt(req.params.index); 
+app.get('/show/:indexno/', (req, res) => {
+    const indexno = parseInt(req.params.indexno); 
     res.render('show.ejs', {
         bakedgood : data[indexno]
 
     })
 })
+
+app.get('/index/new', (req, res) => {
+    res.render('new.ejs');
+})
+
+app.post('/index', (req, res) => {
+    data.push(req.body); 
+    res.redirect('/index')
+})
+
 
 app.listen (process.env.PORT, ()=> {
     console.log ('app is listening at port 3000')

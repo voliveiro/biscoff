@@ -1,4 +1,23 @@
 
+body {
+    background: #FAF9F9; 
+    font-family: 'Righteous', cursive;
+
+}
+
+h1 {
+    text-align: center; 
+    color: #646b80;
+}
+
+a {
+    color:#89B0AE; 
+    text-decoration: none;
+}
+
+h3 {
+    color:#1f7470; 
+}
 img {
     width: 200px; 
     height: 200px; 
@@ -21,6 +40,6 @@ main {
     justify-content: space-between;
 }
 
-h3 {
-    width: 80%; 
+footer {
+    text-align: center; 
 }
